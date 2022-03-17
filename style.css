@@ -1,0 +1,190 @@
+@import url(/root.css);
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Karla', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h2,
+h3 {
+  font-family: 'DM Serif Display', serif;
+}
+/*#################################### HEader ####*/
+@media screen and (min-width: 360px) {
+  .header {
+    display: flex;
+    background-color: var(--color-bg-header);
+  }
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1.5rem 1.5rem;
+  }
+  .img-logo {
+    height: 18px;
+    width: 112px;
+  }
+  .menu-link {
+    display: none;
+  }
+  .menu-m {
+    display: flex;
+    align-items: center;
+  }
+  .icon-menu {
+    height: 32px;
+    width: 32px;
+  }
+  .menu-m .icon-close {
+    display: none;
+  }
+  .menu-m.active .icon-close {
+    display: block;
+    height: 32px;
+    width: 32px;
+  }
+  .menu-m.active .icon-menu {
+    display: none;
+  }
+}
+/*#################################### main home ####*/
+@media screen and (min-width: 360px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img-home {
+    height: 451px;
+    width: 375px;
+  }
+  .info-home {
+    background-color: var(--color-bg-home);
+    padding: 5.3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/images/bg-pattern-intro-left-mobile.svg),
+      url(/assets/images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto;
+    background-position: top left, 15.5rem 23rem;
+  }
+  .title-home {
+    font-family: 'DM Serif Display', serif;
+    font-size: 46.5px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-title-home);
+  }
+  .desc-home {
+    text-align: center;
+    font-size: 16.5px;
+    margin-top: 1rem;
+    color: var(--color-desc-home);
+    line-height: 1.5rem;
+  }
+  .link-home {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border: 2px solid #fff;
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    color: var(--color-link-home);
+  }
+}
+/*#################################### main about ####*/
+@media screen and (min-width: 360px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+  }
+  .notch {
+    width: 45%;
+    height: 2px;
+    background-color: #000;
+  }
+  .title-about {
+    margin-top: 2rem;
+    font-size: 46px;
+    color: var(--color-title-about);
+  }
+  .info-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5rem;
+    row-gap: 3.5rem;
+  }
+  .info-about-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+  .img-about {
+    width: 86px;
+    height: 86px;
+  }
+  .title-info-about {
+    font-size: 25.5px;
+    color: var(--color-title-info-about-area);
+    margin-top: 1rem;
+  }
+  .desc-info-about {
+    text-align: center;
+    line-height: 1.6rem;
+    width: 86%;
+    color: var(--color-desc-info-about-area);
+  }
+}
+/*#################################### main more ####*/
+@media screen and (min-width: 360px) {
+  .more {
+    margin: 8rem 1.5rem;
+    background-color: var(--color-bg-more);
+    padding: 3.8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/images/bg-pattern-how-we-work-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 8.8rem 0rem;
+  }
+  .title-more {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--color-title-more);
+  }
+  .link-more {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border: 2px solid #fff;
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    color: var(--color-link-home);
+  }
+}
