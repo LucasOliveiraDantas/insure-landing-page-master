@@ -85,7 +85,7 @@ h3 {
   }
   .img-home {
     height: 451px;
-    width: 375px;
+    width: 100%;
   }
   .info-home {
     background-color: var(--color-bg-home);
