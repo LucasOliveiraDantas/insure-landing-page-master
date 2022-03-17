@@ -23,6 +23,18 @@ h2,
 h3 {
   font-family: 'DM Serif Display', serif;
 }
+:root {
+  --color-bg-header: hsl(0, 0%, 100%);
+  --color-bg-home: hsl(256, 26%, 20%);
+  --color-title-home: hsl(0, 0%, 100%);
+  --color-desc-home: hsl(0, 0%, 100%);
+  --color-link-home: hsl(0, 0%, 100%);
+  --color-title-about: hsl(270, 9%, 17%);
+  --color-title-info-about-area: hsl(270, 9%, 17%);
+  --color-desc-info-about-area: hsl(273, 4%, 51%);
+  --color-bg-more: hsl(256, 26%, 20%);
+  --color-title-more: hsl(0, 0%, 100%);
+}
 /*#################################### HEader ####*/
 @media screen and (min-width: 360px) {
   .header {
