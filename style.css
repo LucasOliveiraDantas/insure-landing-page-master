@@ -34,6 +34,8 @@ h3 {
   --color-desc-info-about-area: hsl(273, 4%, 51%);
   --color-bg-more: hsl(256, 26%, 20%);
   --color-title-more: hsl(0, 0%, 100%);
+  --color-bg-footer: hsl(0, 0%, 98%);
+  --color-title-menu-links-footer: hsl(273, 4%, 51%);
 }
 /*#################################### HEader ####*/
 @media screen and (min-width: 360px) {
@@ -75,7 +77,7 @@ h3 {
     display: none;
   }
 }
-/*#################################### main home ####*/
+/*#################################### MAin HOme ####*/
 @media screen and (min-width: 360px) {
   .home {
     display: flex;
@@ -122,7 +124,7 @@ h3 {
     color: var(--color-link-home);
   }
 }
-/*#################################### main about ####*/
+/*#################################### MAin ABout ####*/
 @media screen and (min-width: 360px) {
   .about {
     display: flex;
@@ -169,7 +171,7 @@ h3 {
     color: var(--color-desc-info-about-area);
   }
 }
-/*#################################### main more ####*/
+/*#################################### MAin MOre ####*/
 @media screen and (min-width: 360px) {
   .more {
     margin: 8rem 1.5rem;
@@ -198,5 +200,70 @@ h3 {
     margin-top: 2rem;
     padding: 0.5rem 2rem;
     color: var(--color-link-home);
+  }
+} /*#################################### FOoter ####*/
+@media screen and (min-width: 360px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: var(--color-bg-footer);
+    background-image: url(/assets/images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 5.5rem 2rem;
+  }
+  .header-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-logo-footer {
+    width: 112px;
+    height: 18px;
+  }
+  .midias {
+    margin-top: 2rem;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+  }
+  .img-midias {
+    width: 24px;
+    height: 24px;
+  }
+  .divisor-footer {
+    width: 100%;
+    height: 0.2px;
+    background-color: hsl(0, 0%, 98%);
+    margin-top: 2.5rem;
+  }
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+  .title-menu-footer {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--color-title-menu-links-footer);
+  }
+  .list-links-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    row-gap: 0.8rem;
+  }
+  .item-links-footer {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .links-footer {
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
   }
 }
